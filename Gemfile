@@ -8,6 +8,8 @@ gem 'dotenv'
 gem 'rake'
 gem 'require_all'
 gem 'sinatra-activerecord'
+gem 'rack-cors'
+
 
 group :development, :test do
   gem 'pry'
