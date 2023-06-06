@@ -9,7 +9,7 @@ gem 'rake'
 gem 'require_all'
 gem 'sinatra-activerecord'
 gem 'rack-cors'
-
+gem "rack-contrib", "~> 2.3"
 
 group :development, :test do
   gem 'pry'
