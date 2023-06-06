@@ -1,26 +1,21 @@
-# app.rb
+# app.rb or server.rb
 
 require 'sinatra'
 require 'sinatra/activerecord'
+require_relative "../app/models/artist"
+require_relative "../app/models/event"
+require_relative "../app/models/venue"
 
-# Database configuration (assuming you're using ActiveRecord)
-set :database, { adapter: 'sqlite3', database: 'database.db' }
+# Route to get all artists
+get '/artists' do
+  artists = Artist.all
+  artists.to_json
+end
 
-# Routes and handlers
-# get '/' do
-#   'Hello, Sinatra!'
-# end
+# Route to get a specific artist by ID
+get '/artists/:id' do
+  artist = Artist.find(params[:id])
+  artist.to_json
+end
 
-# get '/artists' do
-#   @artists = Artist.all
-#   erb :'artists/index'
-# end
-
-# get '/venues' do
-#   @venues = Venue.all
-#   erb :'venues/index'
-# end
-
-
-# Run the application if this file is executed directly
-run! if __FILE__ == $0
+run Sinatra::Application
