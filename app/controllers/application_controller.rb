@@ -9,7 +9,7 @@ class ApplicationController < Sinatra::Base
     end
 
 
-    get '/artists/:id' do
+     get '/artists/:id' do
         artist = Artist.find(params[:id])
         artist.to_json
      end
@@ -17,6 +17,11 @@ class ApplicationController < Sinatra::Base
      delete '/artists/:id' do
         artist = Artist.find(params[:id])
         artist.destroy
+        artist.to_json
+     end
+    
+     post '/artists' do
+        artist = Artist.create(name:params[:name], payment:params[:payment],)
         artist.to_json
      end
     
@@ -38,6 +43,11 @@ class ApplicationController < Sinatra::Base
         venue.detroy
         venue.to_json
      end
+
+     post '/venues' do
+        venue = Venue.create(name:params[:name], price:params[:price], address:params[:address], capacity:params[:capacity], phone_number:params[:phone_number])
+        venue.to_json
+     end
      
 
      #Event Requests
@@ -57,7 +67,12 @@ class ApplicationController < Sinatra::Base
         event.destroy
         event.to_json
      end
-     
+
+     post '/events' do
+        event = Event.create(name:params[:name], date:params[:date], price:params[:price] , event_type:params[:event_type] , attendees:params[:attendees] , artist_id:params[:artist_id] , venue_id:params[:venue_id])
+        event.to_json
+     end
+
      #Extra
      get '/' do
         "Hello World"
