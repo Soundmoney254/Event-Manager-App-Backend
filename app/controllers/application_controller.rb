@@ -24,7 +24,25 @@ class ApplicationController < Sinatra::Base
         artist = Artist.create(name:params[:name], payment:params[:payment],)
         artist.to_json
      end
-    
+
+     #Artist Special Requests
+
+      get '/artists_most_events' do
+         artist = Artist.most_events
+         artist.to_json
+      end
+       
+     get '/artists_highest_paid' do
+          artist = Artist.highest_paid
+          artist.to_json
+     end
+
+      
+      get '/artists_most_popular' do
+         artist= Artist.most_popular
+         artist.to_json
+      end
+      
     
      #Venue Requests
     get '/venues' do
