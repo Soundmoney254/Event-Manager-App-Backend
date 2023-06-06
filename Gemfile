@@ -5,8 +5,12 @@ gem 'activerecord'
 gem 'sqlite3'
 gem 'json'
 gem 'dotenv'
+gem 'rake'
+gem 'require_all'
+gem 'sinatra-activerecord'
 
 group :development, :test do
-  gem 'rspec'
+  gem 'pry'
   gem 'faker'
+    gem 'rerun'
 end
