@@ -70,7 +70,7 @@ class ApplicationController < Sinatra::Base
 
      #Event Requests
      get '/events' do
-         events = Event.all
+         events = Event.events_with_names
          events.to_json
      end
 
