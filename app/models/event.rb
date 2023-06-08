@@ -10,8 +10,11 @@ class Event < ActiveRecord::Base
         price:event.price,
         event_type:event.event_type,
         attendees:event.attendees,
-        artist:event.artist.name,
-        venue:event.venue.name
+        artist_name:event.artist.name,
+        venue_name:event.venue.name,
+        venue_address:event.venue.address,
+        venue_capacity:event.venue.capacity,
+        venue_phone_number:event.venue.phone_number
       }
     end
   end
