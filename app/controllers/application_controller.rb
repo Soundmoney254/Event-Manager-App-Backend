@@ -91,6 +91,17 @@ class ApplicationController < Sinatra::Base
         event.to_json
      end
 
+     patch '/events/:id'  do
+      event = Event.find(params[:id])
+      event.update(
+         attendees: params[:attendees],
+         event_type: params[:event_type],
+         price: params[:price],
+         date: params[:date]
+      )
+      event.to_json
+    end
+
      #Extra
      get '/' do
         "Hello World"
