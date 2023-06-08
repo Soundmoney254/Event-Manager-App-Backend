@@ -1,3 +1,8 @@
+Artist.destroy_all
+Venue.destroy_all
+Event.destroy_all
+
+
 Artist.create(name: "Sauti Sol", payment: 600000)
 Artist.create(name: "Fena", payment: 250000)
 Artist.create(name: "The Kansoul", payment: 350000)
