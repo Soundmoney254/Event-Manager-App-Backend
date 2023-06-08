@@ -4,7 +4,8 @@ class Event < ActiveRecord::Base
 
   def self.events_with_names
     new_events=Event.all.map do |event|
-      { name:event.name,
+      { id:event.id
+        name:event.name,
         date:event.date,
         price:event.price,
         event_type:event.event_type,
