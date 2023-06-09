@@ -36,4 +36,9 @@ Event.create(name: "Fena Unplugged", date:'2023-08-26 19:00:00', price:2500, eve
 Event.create(name: "The Kansoul Concert", date:'2023-09-02 19:00:00', price:3000, event_type: "Music", attendees: 9000, artist_id: 8, venue_id: 6)
 Event.create(name: "King Kaka Live", date:'2023-09-09 19:00:00', price:1200, event_type: "Music", attendees: 5000, artist_id: 9, venue_id: 1)
 Event.create(name: "Suzanna Owiyo Live", date:'2023-09-16 19:00:00', price:2000, event_type: "Music", attendees: 4000, artist_id: 10, venue_id: 2)
+Event.create(name: "Sauti Sol In Concert", date: '2023-09-29 19:00:00', price: 6000, event_type: "Music", attendees: 30000, artist_id: 6, venue_id: 5)
+Event.create(name: "Sauti Sol Acoustic Night", date: '2023-10-06 19:00:00', price: 3500, event_type: "Music", attendees: 15000, artist_id: 6, venue_id: 6)
+Event.create(name: "Sauti Sol Summer Jam", date: '2023-10-13 19:00:00', price: 4500, event_type: "Music", attendees: 20000, artist_id: 6, venue_id: 1)
+Event.create(name: "Sauti Sol and Nyashinski Live", date: '2023-10-20 19:00:00', price: 5500, event_type: "Music", attendees: 25000, artist_id: 6, venue_id: 2)
+
 
