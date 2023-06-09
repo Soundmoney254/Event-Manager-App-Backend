@@ -31,4 +31,9 @@ Event.create(name: "Nyashinski Live", date:'2023-08-01 19:00:00', price:5000 , e
 Event.create(name: "Bahati and Otile Brown Live", date:'2023-07-29 19:00:00', price:500 , event_type:"Music", attendees:20000, artist_id:1, venue_id:1)
 Event.create(name: "Nyashinski and Karisoke Live", date:'2023-08-05 19:00:00', price:15000 , event_type:"Music", attendees:15000, artist_id:3, venue_id:2)
 Event.create(name: "Just A Band Live", date:'2023-08-12 19:00:00', price:1000 , event_type:"Music", attendees:10000, artist_id:5, venue_id:3)
+Event.create(name: "Sauti Sol Live", date:'2023-08-19 19:00:00', price:3500, event_type: "Music", attendees: 8000, artist_id: 6, venue_id: 4)
+Event.create(name: "Fena Unplugged", date:'2023-08-26 19:00:00', price:2500, event_type: "Music", attendees: 6000, artist_id: 7, venue_id: 5)
+Event.create(name: "The Kansoul Concert", date:'2023-09-02 19:00:00', price:3000, event_type: "Music", attendees: 9000, artist_id: 8, venue_id: 6)
+Event.create(name: "King Kaka Live", date:'2023-09-09 19:00:00', price:1200, event_type: "Music", attendees: 5000, artist_id: 9, venue_id: 1)
+Event.create(name: "Suzanna Owiyo Live", date:'2023-09-16 19:00:00', price:2000, event_type: "Music", attendees: 4000, artist_id: 10, venue_id: 2)
 
