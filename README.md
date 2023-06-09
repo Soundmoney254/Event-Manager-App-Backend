@@ -7,6 +7,24 @@ Event managers in the music industry struggle to efficiently organize and manage
 2. Active Record - Does the object relational mapping for the tables and classes
 3. React JS
 
+## Geting Started /Setup
+
+1. Clone the repo
+```sh
+https://github.com/Soundmoney254/Event-Manager-App-Backend
+ ```
+ or use the live link
+ ```sh
+https://taffie-theuri.github.io/event-management-app-frontend/
+ ```
+
+ 2. Clone the repo.
+ 3. Open the repo files on your code editor.
+ 4. Run ``` bundle install ``` inside the app's root directory to install the dependancies.
+ 5. Run the application on the terminal using ``` bundle exec rackup ```
+ 6. This will start the api server which the frontend will be interacting with.
+ 7. If you need to reset the database use the command  ``` bundle exec rake db:reset ```
+
 ## Features
 
 1. **Event Management**
